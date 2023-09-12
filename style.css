@@ -1,7 +1,13 @@
+* { /* Global Rules */
+    box-sizing: border-box;
+}
+
+
 a {
     color:white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: larger;
+    text-decoration: none;
 }
 html,
 body {
@@ -11,12 +17,53 @@ background-color:rgb(50, 54, 133);
 font-family:'Courier New', Courier, monospace;
 }
 
+h1 { /* font size does not matter with headers */
+
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+h4 {
+
+}
+
 .anchor-tag {
     color:red;
 }
 
 .anchor-id {
     color:red;
+}
+
+header {
+/* background-color: cadetblue; */
+padding: 20px;
+}
+
+header nav {
+display:flex;
+flex-direction: row;
+justify-content: flex-end;
+align-items: center;
+max-width: 900px;
+margin: 0 auto;
+}
+
+header nav a {
+font-size: 20px;
+font-weight: bold;
+padding: 3px;
+margin:  0 10px; /* Only inputting one value on margin puts it on the top, bottom, left and right */
+}
+
+header nav a:last-of-type {
+margin-right: 0;    /* The header moves together */
 }
 
 nav {
@@ -91,3 +138,41 @@ align-items: center;
     max-width:800px;
 
 }
+
+.positioning-wrapper {
+    background-color: coral;
+}
+
+.positioning-interior {
+
+}
+
+.interior--positioning {
+background-color: #85c4ff;
+border-color: #0e3f9e;
+padding: 40px;  
+min-height: 600px;
+position: relative;
+}
+
+.circle {
+border: 5px solid #0e3f9e;
+height:60px;
+width: 60px;
+border-radius: 50%;
+position: absolute;
+}
+
+.square {
+background-color: #cad7f1;
+border: 5px solid #0e3f9e;
+height:80px;
+position: absolute;
+width:80px;
+}
+/* css positioning elements: 
+static is default
+relative
+absolute 
+fixed
+*/

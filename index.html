@@ -72,11 +72,60 @@
     </div>
 </section>
 <!-- CSS Box Model Section-->
-    <section></section>
+    <section>
+    
+    </section>
 <!-- CSS Box Model Section-->
     <section></section>
 <!-- CSS Box Model Section-->
-    <section></section>
+    <section>
+        <div class="interior"> 
+            <h1> Highest level header (h1)</h1>
+            <h2> Sub Section of the h1 (h2)</h2>
+            <p> this is a paragraph</p>
+            <h3> Sub section of h2 (h3) </h3>
+            <h4> h4 is a sub section of h3 (h4)</h4>
+        </div>
+
+        <section class="positioning-wrapper">
+            <div class="interior interior--positioning">
+                <h1> Positioning Elements</h1>
+            <div class="circle" style="right:20px; top: 300px;"></div>
+            <div class="circle" style="left: 50px bottom: 100px;"></div>
+            <div class="circle" style="right:200px; bottom: 30px;"></div>
+            <div class="square" style="left:300px; bottom: 60px;"></div>
+            <div class="square" style="right:30px;"></div>
+            </div>
+        </section>
+       <!-- Simple Javascript ----> 
+        
+        <section>
+        <div class="interior">
+            <h1> simple javascript</h1>
+            <script>
+            let count=0;
+                function increaseCount() {
+                    count = count+1;
+                    const countIndicator = document.querySelector('.count-indicator');
+                   return  (countIndicator.innerHTML= count);
+
+                }
+
+
+                function decreaseCount() {
+                    count = count-1;
+                    const countIndicator = document.querySelector('.count-indicator');
+                   return  (countIndicator.innerHTML= count);
+
+                }
+            </script>
+            <p>Count: <span class="count-indicator">0</span></p>
+    
+            <button onClick="increaseCount()"> Click to increase! </button>
+            <button onClick="decreaseCount()"> Click to decrease! </button>
+        </div>
+        </section>
+    </section>
 
     </main>
 
